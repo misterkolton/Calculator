@@ -1,14 +1,21 @@
+#theme {
+    background-color: #72bab9;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
 
+}
 
 .calculatorContainer {
     justify-content: center;
-    border: solid 2px #72bab9;
     display: grid;
     align-content: center;
-    padding: 50px;
+    padding: 40px;
     grid-template-columns: repeat(4, 60px);
     grid-template-rows: minmax(120px, auto) repeat (5,100px);
-    background-color: #72bab9;
+   
+    
     
 }
 
@@ -20,6 +27,8 @@ button {
     background-color: black;
     opacity: 60%;
     color: blanchedalmond;
+    font-family: 'Roboto', sans-serif;
+
   
     
 }
@@ -28,13 +37,13 @@ button:hover {
     color: black;
 }
 
-    .display {
+.display {
      grid-column: 1 / -1;
-     border: solid 2px whitesmoke;
+     border: solid 2px #333333;
      height: 80px;
      display: flex;
      justify-content: flex-end;
-     padding: 20px;
+     padding: 0 0 20px 0;
      background-color: whitesmoke;
      opacity: 90%;
  
@@ -45,11 +54,29 @@ button:hover {
  }
 
 .mode-button{
-padding: 60px;
-background-color: #72bab9;
-justify-content: space-around;
-align-items: center;
-display: flex;
+    padding: 20px;
+    margin: 20px;
+    background-color: #aab4b4;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    border-radius: 15px;
+
 
 }
-     
+
+.dark-mode:hover {
+    box-shadow: -5px -5px 30px 5px black, 5px 5px 30px 5px darkgray;
+
+}
+
+.light-mode:hover {
+    box-shadow: -5px -5px 30px 5px whitesmoke, 5px 5px 30px 5px silver;
+}
+
+.color-mode:hover {
+    box-shadow: -5px -5px 30px 5px rgb(18, 143, 95), 5px 5px 30px 5px #72bab9
+
+}
+
+.dark-mode {}
