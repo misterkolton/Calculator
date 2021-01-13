@@ -14,14 +14,17 @@
 <body>
     <div id="theme">
         <div class="calculatorContainer">
-            <div class="display">12345</div>
+            <div class="display">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
             <button data-all-clear class="large-button">AC</button>
             <button data-delete>DEL</button>
             <button data-operation>÷</button>
             <button data-number>1</button>
             <button data-number>2</button>
             <button data-number>3</button>
-            <button data-value="*" data-operation>×</button>
+            <button data-operation>×</button>
             <button data-number>4</button>
             <button data-number>5</button>
             <button data-number>6</button>
@@ -37,9 +40,9 @@
     </div>
 
     <div class="mode-button">
-        <button id="theme" onclick="selectMode('dark-mode');" class="dark-mode">Dark Mode</button>
-        <button id="theme" onclick="selectMode('light-mode');" class="light-mode">Light Mode</button>
-        <button id="theme" onclick="selectMode('color-mode');" class="color-mode">Color Mode</button>
+        <button onclick="selectMode('dark-mode');" class="dark-mode">Dark Mode</button>
+        <button onclick="selectMode('light-mode');" class="light-mode">Light Mode</button>
+        <button onclick="selectMode('color-mode');" class="color-mode">Color Mode</button>
 
     </div>
 

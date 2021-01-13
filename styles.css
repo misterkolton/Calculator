@@ -1,3 +1,7 @@
+body {
+    min-width: 300px;
+}
+
 #theme {
     background-color: #72bab9;
     border-radius: 15px;
@@ -39,15 +43,27 @@ button:hover {
 
 .display {
      grid-column: 1 / -1;
-     border: solid 2px #333333;
      height: 80px;
      display: flex;
-     justify-content: flex-end;
-     padding: 0 0 20px 0;
-     background-color: whitesmoke;
+     justify-content: space-between;
+     align-items: flex-end;
+     align-content: center;
+     padding: 10px;
+     background-color: #aab4b4;
      opacity: 90%;
- 
+     flex-direction: column;
+     word-wrap: break-word;
+     word-break: break-all; 
  }
+
+ .display .previous-operand { 
+     font-size: 10px;
+ }
+
+ .display .current-operand {
+     font-size: 25px;
+ }
+
 
  .large-button {
      grid-column: span 2;
@@ -79,4 +95,3 @@ button:hover {
 
 }
 
-.dark-mode {}
